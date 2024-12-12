@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="./assets/css/profilemarked.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_block">
+            <div class="header_responseive">
+                <div class="header_responseive_first">
+                    <div class="header_responsive_sidebar" onclick="openNav()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                            <path
+                                d="M0.25 1.75C0.25 1.08594 0.796875 0.5 1.5 0.5H16.5C17.1641 0.5 17.75 1.08594 17.75 1.75C17.75 2.45312 17.1641 3 16.5 3H1.5C0.796875 3 0.25 2.45312 0.25 1.75ZM0.25 8C0.25 7.33594 0.796875 6.75 1.5 6.75H16.5C17.1641 6.75 17.75 7.33594 17.75 8C17.75 8.70312 17.1641 9.25 16.5 9.25H1.5C0.796875 9.25 0.25 8.70312 0.25 8ZM16.5 15.5H1.5C0.796875 15.5 0.25 14.9531 0.25 14.25C0.25 13.5859 0.796875 13 1.5 13H16.5C17.1641 13 17.75 13.5859 17.75 14.25C17.75 14.9531 17.1641 15.5 16.5 15.5Z"
+                                fill="#3E3232" />
+                        </svg>
+                    </div>
+                    <div class="header_items">
+                        <div class="header_logo">
+                            <a href="/">MEGA.news</a>
+                        </div>
+                        <div class="header_menu">
+                            <div class="header_dropdown">
+                                <div class="header_dropbtn">
+                                    Categories
+                                    <div class="header_dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_dropdown">
+                                <div class="header_dropbtn">
+                                    Pages
+                                    <div class="header_dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_dropbtn">Contact Us</div>
+                            <div class="header_dropbtn">About Us</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_responseive_second">
+                    <div class="header_responseive_user">
+                        <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png"></img>
+                        <p>
+                            Behzad
+                        </p>
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 18C9.71875 18 9.46875 17.9062 9.28125 17.7188C8.875 17.3438 8.875 16.6875 9.28125 16.3125L13.5625 12L9.28125 7.71875C8.875 7.34375 8.875 6.6875 9.28125 6.3125C9.65625 5.90625 10.3125 5.90625 10.6875 6.3125L15.6875 11.3125C16.0938 11.6875 16.0938 12.3438 15.6875 12.7188L10.6875 17.7188C10.5 17.9062 10.25 18 10 18Z"
+                                fill="#3E3232" />
+                        </svg>
+                    </div>
+                    <div class="header_responseive_key">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
+                            <path
+                                d="M13.625 0H2.375C1.32031 0 0.5 0.859375 0.5 1.875V18.75C0.5 19.7266 1.51562 20.3125 2.375 19.8438L8 16.5625L13.5859 19.8438C14.4453 20.3125 15.5 19.7266 15.5 18.75V1.875C15.5 0.859375 14.6406 0 13.625 0ZM13.625 17.6562L8 14.375L2.375 17.6562V2.10938C2.375 1.99219 2.45312 1.875 2.57031 1.875H13.3516C13.5078 1.875 13.625 1.99219 13.625 2.10938V17.6562Z"
+                                fill="#3E3232" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_search">
+                <div class="header_search_input">
+                    <p>
+                        <svg width="20" height="20" viewBox="0 0 6 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3 13.0625C4.17188 13.0625 5.1875 14.0781 5.1875 15.25C5.1875 16.4609 4.17188 17.4375 3 17.4375C1.78906 17.4375 0.8125 16.4609 0.8125 15.25C0.8125 14.0781 1.78906 13.0625 3 13.0625ZM3 6.8125C4.17188 6.8125 5.1875 7.82812 5.1875 9C5.1875 10.2109 4.17188 11.1875 3 11.1875C1.78906 11.1875 0.8125 10.2109 0.8125 9C0.8125 7.82812 1.78906 6.8125 3 6.8125ZM3 4.9375C1.78906 4.9375 0.8125 3.96094 0.8125 2.75C0.8125 1.57812 1.78906 0.5625 3 0.5625C4.17188 0.5625 5.1875 1.57812 5.1875 2.75C5.1875 3.96094 4.17188 4.9375 3 4.9375Z"
+                                fill="#3E3232" fill-opacity="0.75" />
+                        </svg>
+                    </p>
+                    <input class="header_search_input_tag" placeholder="Search Anything">
+                    <p>
+                        <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.5312 18.3438C21.1172 18.9688 21.1172 19.9453 20.5312 20.5703C19.9062 21.1562 18.9297 21.1562 18.3047 20.5703L13.6562 15.8828C12.0547 16.9375 10.1016 17.4844 7.99219 17.2109C4.39844 16.7031 1.50781 13.7734 1.03906 10.2188C0.375 4.90625 4.86719 0.414062 10.1797 1.07812C13.7344 1.54688 16.6641 4.4375 17.1719 8.03125C17.4453 10.1406 16.8984 12.0938 15.8438 13.6562L20.5312 18.3438ZM4.08594 9.125C4.08594 11.8984 6.3125 14.125 9.08594 14.125C11.8203 14.125 14.0859 11.8984 14.0859 9.125C14.0859 6.39062 11.8203 4.125 9.08594 4.125C6.3125 4.125 4.08594 6.39062 4.08594 9.125Z"
+                                fill="#3E3232" />
+                        </svg>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="writer_block">
+            <div class="writer_abstract">
+                <div class="writer_abstract_image">
+                    <img src="./assets/img/abstract/unsplash_9XngoIpxcEo.jpg"></img>
+                </div>
+                <div class="writer_abstract_followers">
+                    <div class="writer_abstract_followers_first">
+                        <div class="writer_abstract_userinfo">
+                            <div class="writer_abstract_userinfo_avatar">
+                                <img src="./assets/img/avatar/unsplash_kq8dGNS1lLk.png">
+                            </div>
+                            <div class="writer_abstract_userinfo_name">
+                                <p>Louis Hoebregts</p>
+                            </div>
+                        </div>
+                        <div class="writer_abstract_menus">
+                            <div class="writer_abstract_menus_rate">
+                                <div class="profilemarked_abstract_menus_text" id="myDIV">
+                                    <span class="page_move">
+                                        <a class="profilemarked_abstract_menus_text_txt">Marked </a>
+                                        <div class="profilemarked_abstract_menus_text_txt_border active">
+
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="writer_abstract_menus_follows">
+                                <div class="profilemarked_abstract_menus_text" id="myDIV">
+                                    <span class="page_move">
+                                        <a class="profilemarked_abstract_menus_text_txt">Send Post </a>
+                                        <div class="profilemarked_abstract_menus_text_txt_border">
+
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="writer_abstract_menus_post" >
+                                <div class="profilemarked_abstract_menus_text" id="myDIV">
+                                    <span class="page_move">
+                                        <a class="profilemarked_abstract_menus_text_txt">Posts </a>
+                                        <div class="profilemarked_abstract_menus_text_txt_border">
+
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profiemarked_abstract_foolow_button">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
+                                fill="none">
+                                <path
+                                    d="M6.34766 7.75C8.26172 7.75 9.84766 6.19141 9.84766 4.25C9.84766 2.33594 8.26172 0.75 6.34766 0.75C4.43359 0.75 2.875 2.33594 2.875 4.25C2.875 6.19141 4.43359 7.75 6.34766 7.75ZM7.74219 9.0625H4.98047C2.35547 9.0625 0.25 11.1953 0.25 13.8203C0.25 14.3398 0.660156 14.75 1.17969 14.75H9.02734C8.97266 14.6133 8.97266 14.4492 9 14.2852L9.41016 12.3438C9.46484 12.0703 9.57422 11.8242 9.76562 11.6328L11.0234 10.4023C10.1758 9.58203 9.02734 9.0625 7.74219 9.0625ZM10.3945 12.2617C10.3125 12.3438 10.2852 12.4258 10.2578 12.5078L9.875 14.4766C9.82031 14.6406 9.98438 14.8047 10.1484 14.75L12.1172 14.3672C12.1992 14.3398 12.2812 14.3125 12.3633 14.2305L15.7812 10.8125L13.8125 8.84375L10.3945 12.2617ZM17.4492 7.75L16.875 7.17578C16.4922 6.79297 15.8633 6.79297 15.4805 7.17578L14.4414 8.21484L16.4102 10.1836L17.4492 9.14453C17.832 8.76172 17.832 8.13281 17.4492 7.75Z"
+                                    fill="#F81539" fill-opacity="0.75" />
+                            </svg> Edit Profile</p>
+                    </div>
+                </div>
+            </div>
+            <div class="writer_latest_post">
+                <div class="index-pphs-title-section">
+                    <div></div>
+                    <h4>Latest Posts</h4>
+                </div>
+                <div class="writer_index-ppfs-post-card">
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/sport/unsplash_NrN5Rvl89Lo.png">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/technology/unsplash_mP7aPSUm7aE.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/car/unsplash_-js8KGQLfhw.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/technology/unsplash_rVcxGBT80j8.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/food/unsplash_DGHy9KgdTj0.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/car/08.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/sport/unsplash_jAPdUndfJBw.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/car/07.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/food/06.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/technology/06.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/sport/unsplash_dP6i0grBlTY1.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/food/unsplash_r01ZopTiEV8.jpg">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a class="pagination_btn" href="#">&laquo; Pre</a>
+                <a class="active" href="#">1</a>
+                <a  href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a class="pagination_btn" href="#">Next &raquo;</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left_footer">
+            <div class="left_footer_section">
+                <div class="left_footer_section_one">
+                    <div class="left_footer_mega_news">
+                        <div class="left_footer_mega_news_title">
+                            <div class="footer_svg">
+                            </div>
+                            <p>Mega News</p>
+                        </div>
+                        <div class="left_footer_mega_news_content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Egestas purus viverra
+                                accumsan in nisl nisi. Arcu cursus vitae congue
+                                mauris rhoncus aenean vel elit scelerisque. In
+                                egestas erat imperdiet sed euismod nisi porta lorem
+                                mollis. Morbi tristique senectus et netus. Mattis
+                                pellentesque id nibh tortor id aliquet lectus proin
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left_footer_newsletters">
+                        <div class="left_footer_mega_news_title">
+                            <div class="footer_svg">
+                            </div>
+                            <p>Newsletters</p>
+                        </div>
+                        <div class="left_footer_newsletters_inputbox">
+                            <input class="left_footer_newsletters_input_tag" placeholder="Write Your Email...">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 16"
+                                fill="none">
+                                <path
+                                    d="M18.125 0.5C19.1406 0.5 20 1.35938 20 2.375C20 3 19.6875 3.54688 19.2188 3.89844L10.7422 10.2656C10.2734 10.6172 9.6875 10.6172 9.21875 10.2656L0.742188 3.89844C0.273438 3.54688 0 3 0 2.375C0 1.35938 0.820312 0.5 1.875 0.5H18.125ZM8.47656 11.2812C9.375 11.9453 10.5859 11.9453 11.4844 11.2812L20 4.875V13C20 14.4062 18.8672 15.5 17.5 15.5H2.5C1.09375 15.5 0 14.4062 0 13V4.875L8.47656 11.2812Z"
+                                    fill="#3E3232" fill-opacity="0.75" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_footer_section_two">
+                    <div class="left_footer_categories">
+                        <div class="left_footer_mega_news_title">
+                            <div class="footer_svg">
+                            </div>
+                            <p>Categories</p>
+                        </div>
+                        <div class="left_footer_categories_content">
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                        </div>
+                    </div>
+                    <div class="left_footer_social_network">
+                        <div class="left_footer_mega_news_title">
+                            <div class="footer_svg">
+                            </div>
+                            <p>Social Network</p>
+                        </div>
+                        <div class="left_footer_social_network_buttons">
+                            <div class="left_footer_instrgam_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M8 4.60547C9.72266 4.60547 11.1445 6.02734 11.1445 7.75C11.1445 9.5 9.72266 10.8945 8 10.8945C6.25 10.8945 4.85547 9.5 4.85547 7.75C4.85547 6.02734 6.25 4.60547 8 4.60547ZM8 9.80078C9.12109 9.80078 10.0234 8.89844 10.0234 7.75C10.0234 6.62891 9.12109 5.72656 8 5.72656C6.85156 5.72656 5.94922 6.62891 5.94922 7.75C5.94922 8.89844 6.87891 9.80078 8 9.80078ZM11.9922 4.49609C11.9922 4.08594 11.6641 3.75781 11.2539 3.75781C10.8438 3.75781 10.5156 4.08594 10.5156 4.49609C10.5156 4.90625 10.8438 5.23438 11.2539 5.23438C11.6641 5.23438 11.9922 4.90625 11.9922 4.49609ZM14.0703 5.23438C14.125 6.24609 14.125 9.28125 14.0703 10.293C14.0156 11.2773 13.7969 12.125 13.0859 12.8633C12.375 13.5742 11.5 13.793 10.5156 13.8477C9.50391 13.9023 6.46875 13.9023 5.45703 13.8477C4.47266 13.793 3.625 13.5742 2.88672 12.8633C2.17578 12.125 1.95703 11.2773 1.90234 10.293C1.84766 9.28125 1.84766 6.24609 1.90234 5.23438C1.95703 4.25 2.17578 3.375 2.88672 2.66406C3.625 1.95312 4.47266 1.73438 5.45703 1.67969C6.46875 1.625 9.50391 1.625 10.5156 1.67969C11.5 1.73438 12.375 1.95312 13.0859 2.66406C13.7969 3.375 14.0156 4.25 14.0703 5.23438ZM12.7578 11.3594C13.0859 10.5664 13.0039 8.65234 13.0039 7.75C13.0039 6.875 13.0859 4.96094 12.7578 4.14062C12.5391 3.62109 12.1289 3.18359 11.6094 2.99219C10.7891 2.66406 8.875 2.74609 8 2.74609C7.09766 2.74609 5.18359 2.66406 4.39062 2.99219C3.84375 3.21094 3.43359 3.62109 3.21484 4.14062C2.88672 4.96094 2.96875 6.875 2.96875 7.75C2.96875 8.65234 2.88672 10.5664 3.21484 11.3594C3.43359 11.9062 3.84375 12.3164 4.39062 12.5352C5.18359 12.8633 7.09766 12.7812 8 12.7812C8.875 12.7812 10.7891 12.8633 11.6094 12.5352C12.1289 12.3164 12.5664 11.9062 12.7578 11.3594Z"
+                                        fill="white" />
+                                </svg>
+                                <div class="instrgam_button">
+                                    Instrgam
+                                </div>
+                            </div>
+                            <div class="left_footer_twitter_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                    fill="none">
+                                    <path
+                                        d="M14.3438 3.75C14.3438 3.90625 14.3438 4.03125 14.3438 4.1875C14.3438 8.53125 11.0625 13.5 5.03125 13.5C3.15625 13.5 1.4375 12.9688 0 12.0312C0.25 12.0625 0.5 12.0938 0.78125 12.0938C2.3125 12.0938 3.71875 11.5625 4.84375 10.6875C3.40625 10.6562 2.1875 9.71875 1.78125 8.40625C2 8.4375 2.1875 8.46875 2.40625 8.46875C2.6875 8.46875 3 8.40625 3.25 8.34375C1.75 8.03125 0.625 6.71875 0.625 5.125V5.09375C1.0625 5.34375 1.59375 5.46875 2.125 5.5C1.21875 4.90625 0.65625 3.90625 0.65625 2.78125C0.65625 2.15625 0.8125 1.59375 1.09375 1.125C2.71875 3.09375 5.15625 4.40625 7.875 4.5625C7.8125 4.3125 7.78125 4.0625 7.78125 3.8125C7.78125 2 9.25 0.53125 11.0625 0.53125C12 0.53125 12.8438 0.90625 13.4688 1.5625C14.1875 1.40625 14.9062 1.125 15.5312 0.75C15.2812 1.53125 14.7812 2.15625 14.0938 2.5625C14.75 2.5 15.4062 2.3125 15.9688 2.0625C15.5312 2.71875 14.9688 3.28125 14.3438 3.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left_footer_text">
+                <p>Privacy Policy | Terms & Conditions</p>
+                <p>All Copyright (c) 2022 Reserved</p>
+            </div>
+        </div>
+        <div class="new_comments">
+            <div class="left_footer_mega_news_title">
+                <div class="footer_svg">
+                </div>
+                <p>New Comments</p>
+            </div>
+            <div class="new_comments_card">
+                <p class="new_comments_card_title">
+                    Cassia
+                </p>
+                <p class="new_comments_card_content">
+                    Take a rest, i'll be cheer up you again in 2 next game go go go
+                </p>
+            </div>
+            <div class="new_comments_card">
+                <p class="new_comments_card_title">
+                    Cassia
+                </p>
+                <p class="new_comments_card_content">
+                    Take a rest, i'll be cheer up you again in 2 next game go go go
+                </p>
+            </div>
+            <div class="new_comments_card">
+                <p class="new_comments_card_title">
+                    Cassia
+                </p>
+                <p class="new_comments_card_content">
+                    Take a rest, i'll be cheer up you again in 2 next game go go go
+                </p>
+            </div>
+            <div class="new_comments_card">
+                <p class="new_comments_card_title">
+                    Cassia
+                </p>
+                <p class="new_comments_card_content">
+                    Take a rest, i'll be cheer up you again in 2 next game go go go
+                </p>
+            </div>
+        </div>
+        <div class="follow_on_instagram">
+            <div class="left_footer_mega_news_title">
+                <div class="footer_svg">
+                </div>
+                <p>Follow On Instrgam</p>
+            </div>
+            <div class="follow_on_instagram_image">
+                <img src="./assets/img/car/unsplash_-js8KGQLfhw.jpg" />
+                <img src="./assets/img/animal/07.jpg" alt="img" />
+                <img src="./assets/img/technology/02.jpg" alt="img" />
+                <img src="./assets/img/food/07.jpg" alt="img" />
+                <img src="./assets/img/music/01.jpg" alt="img" />
+                <img src="./assets/img/dance/01.jpg" alt="img" />
+                <img src="./assets/img/animal/10.jpg" alt="img" />
+                <img src="./assets/img/sport/02.jpg" alt="img" />
+                <img src="./assets/img/dance/03.jpg" alt="img" />
+            </div>
+        </div>
+    </footer>
+    <div class="index-sidebar-container" id="sidebar">
+        <div class="index-sidebar-header">
+            <span class="index-logo">MEGA.news</span>
+            <div class="index-close-btn" onclick="closeSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path
+                        d="M12.8594 11.1406C13.3672 11.6094 13.3672 12.4297 12.8594 12.8984C12.625 13.1328 12.3125 13.25 12 13.25C11.6484 13.25 11.3359 13.1328 11.1016 12.8984L7 8.79688L2.85938 12.8984C2.625 13.1328 2.3125 13.25 2 13.25C1.64844 13.25 1.33594 13.1328 1.10156 12.8984C0.59375 12.4297 0.59375 11.6094 1.10156 11.1406L5.20312 7L1.10156 2.89844C0.59375 2.42969 0.59375 1.60938 1.10156 1.14062C1.57031 0.632812 2.39062 0.632812 2.85938 1.14062L7 5.24219L11.1016 1.14062C11.5703 0.632812 12.3906 0.632812 12.8594 1.14062C13.3672 1.60938 13.3672 2.42969 12.8594 2.89844L8.75781 7.03906L12.8594 11.1406Z"
+                        fill="#3E3232" />
+                </svg>
+            </div>
+        </div>
+        <div class="index-sidebar-menu">
+            <div class="index-menu-item index-categories">
+                <div class="index-category-menu">
+                    <div class="tick"></div>
+                    <h5 class="index-menu-text">Categories</h5>
+
+                </div>
+                <span class="index-menu-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 18C9.71875 18 9.46875 17.9062 9.28125 17.7188C8.875 17.3438 8.875 16.6875 9.28125 16.3125L13.5625 12L9.28125 7.71875C8.875 7.34375 8.875 6.6875 9.28125 6.3125C9.65625 5.90625 10.3125 5.90625 10.6875 6.3125L15.6875 11.3125C16.0938 11.6875 16.0938 12.3438 15.6875 12.7188L10.6875 17.7188C10.5 17.9062 10.25 18 10 18Z"
+                            fill="#3E3232" />
+                    </svg>
+                </span>
+            </div>
+            <h5 class="index-menu-item menu-item-arrow">Pages
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <path
+                        d="M8 11.75C7.75391 11.75 7.53516 11.668 7.37109 11.5039L2.99609 7.12891C2.64063 6.80078 2.64063 6.22656 2.99609 5.89844C3.32422 5.54297 3.89844 5.54297 4.22656 5.89844L8 9.64453L11.7461 5.89844C12.0742 5.54297 12.6484 5.54297 12.9766 5.89844C13.332 6.22656 13.332 6.80078 12.9766 7.12891L8.60156 11.5039C8.4375 11.668 8.21875 11.75 8 11.75Z"
+                        fill="#3E3232" fill-opacity="0.5" />
+                </svg>
+            </h5>
+            <h5 class="index-menu-item">Contact Us</h5>
+            <h5 class="index-menu-item">About Us</h5>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

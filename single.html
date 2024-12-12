@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/single.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header_block">
+            <div class="header_responseive">
+                <div class="header_responseive_first">
+                    <div class="header_responsive_sidebar" onclick="openNav()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                            <path
+                                d="M0.25 1.75C0.25 1.08594 0.796875 0.5 1.5 0.5H16.5C17.1641 0.5 17.75 1.08594 17.75 1.75C17.75 2.45312 17.1641 3 16.5 3H1.5C0.796875 3 0.25 2.45312 0.25 1.75ZM0.25 8C0.25 7.33594 0.796875 6.75 1.5 6.75H16.5C17.1641 6.75 17.75 7.33594 17.75 8C17.75 8.70312 17.1641 9.25 16.5 9.25H1.5C0.796875 9.25 0.25 8.70312 0.25 8ZM16.5 15.5H1.5C0.796875 15.5 0.25 14.9531 0.25 14.25C0.25 13.5859 0.796875 13 1.5 13H16.5C17.1641 13 17.75 13.5859 17.75 14.25C17.75 14.9531 17.1641 15.5 16.5 15.5Z"
+                                fill="#3E3232" />
+                        </svg>
+                    </div>
+                    <div class="header_items">
+                        <div class="header_logo">
+                            <a href="/">MEGA.news</a>
+                        </div>
+                        <div class="header_menu">
+                            <div class="header_dropdown">
+                                <div class="header_dropbtn">
+                                    Categories
+                                    <div class="header_dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_dropdown">
+                                <div class="header_dropbtn">
+                                    Pages
+                                    <div class="header_dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_dropbtn">Contact Us</div>
+                            <div class="header_dropbtn">About Us</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_responseive_second">
+                    <div class="header_responseive_user">
+                        <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png"></img>
+                        <p>
+                            Behzad
+                        </p>
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 18C9.71875 18 9.46875 17.9062 9.28125 17.7188C8.875 17.3438 8.875 16.6875 9.28125 16.3125L13.5625 12L9.28125 7.71875C8.875 7.34375 8.875 6.6875 9.28125 6.3125C9.65625 5.90625 10.3125 5.90625 10.6875 6.3125L15.6875 11.3125C16.0938 11.6875 16.0938 12.3438 15.6875 12.7188L10.6875 17.7188C10.5 17.9062 10.25 18 10 18Z"
+                                fill="#3E3232" />
+                        </svg>
+                    </div>
+                    <div class="header_responseive_key">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
+                            <path
+                                d="M13.625 0H2.375C1.32031 0 0.5 0.859375 0.5 1.875V18.75C0.5 19.7266 1.51562 20.3125 2.375 19.8438L8 16.5625L13.5859 19.8438C14.4453 20.3125 15.5 19.7266 15.5 18.75V1.875C15.5 0.859375 14.6406 0 13.625 0ZM13.625 17.6562L8 14.375L2.375 17.6562V2.10938C2.375 1.99219 2.45312 1.875 2.57031 1.875H13.3516C13.5078 1.875 13.625 1.99219 13.625 2.10938V17.6562Z"
+                                fill="#3E3232" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_search">
+                <div class="header_search_input">
+                    <p>
+                        <svg width="20" height="20" viewBox="0 0 6 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3 13.0625C4.17188 13.0625 5.1875 14.0781 5.1875 15.25C5.1875 16.4609 4.17188 17.4375 3 17.4375C1.78906 17.4375 0.8125 16.4609 0.8125 15.25C0.8125 14.0781 1.78906 13.0625 3 13.0625ZM3 6.8125C4.17188 6.8125 5.1875 7.82812 5.1875 9C5.1875 10.2109 4.17188 11.1875 3 11.1875C1.78906 11.1875 0.8125 10.2109 0.8125 9C0.8125 7.82812 1.78906 6.8125 3 6.8125ZM3 4.9375C1.78906 4.9375 0.8125 3.96094 0.8125 2.75C0.8125 1.57812 1.78906 0.5625 3 0.5625C4.17188 0.5625 5.1875 1.57812 5.1875 2.75C5.1875 3.96094 4.17188 4.9375 3 4.9375Z"
+                                fill="#3E3232" fill-opacity="0.75" />
+                        </svg>
+                    </p>
+                    <input class="header_search_input_tag" placeholder="Search Anything">
+                    <p>
+                        <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.5312 18.3438C21.1172 18.9688 21.1172 19.9453 20.5312 20.5703C19.9062 21.1562 18.9297 21.1562 18.3047 20.5703L13.6562 15.8828C12.0547 16.9375 10.1016 17.4844 7.99219 17.2109C4.39844 16.7031 1.50781 13.7734 1.03906 10.2188C0.375 4.90625 4.86719 0.414062 10.1797 1.07812C13.7344 1.54688 16.6641 4.4375 17.1719 8.03125C17.4453 10.1406 16.8984 12.0938 15.8438 13.6562L20.5312 18.3438ZM4.08594 9.125C4.08594 11.8984 6.3125 14.125 9.08594 14.125C11.8203 14.125 14.0859 11.8984 14.0859 9.125C14.0859 6.39062 11.8203 4.125 9.08594 4.125C6.3125 4.125 4.08594 6.39062 4.08594 9.125Z"
+                                fill="#3E3232" />
+                        </svg>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="single-main-container">
+            <div class="single-top-url">
+                <span class="single-top-url-text">home</span>
+                <span class="single-top-url-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
+                        <path
+                            d="M1.5 10C1.28906 10 1.10156 9.92969 0.960938 9.78906C0.65625 9.50781 0.65625 9.01562 0.960938 8.73438L4.17188 5.5L0.960938 2.28906C0.65625 2.00781 0.65625 1.51562 0.960938 1.23438C1.24219 0.929688 1.73438 0.929688 2.01562 1.23438L5.76562 4.98438C6.07031 5.26562 6.07031 5.75781 5.76562 6.03906L2.01562 9.78906C1.875 9.92969 1.6875 10 1.5 10Z"
+                            fill="#3E3232" fill-opacity="0.5" />
+                    </svg>
+                </span>
+                <span class="single-top-url-text">featured</span>
+                <span class="single-top-url-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
+                        <path
+                            d="M1.5 10C1.28906 10 1.10156 9.92969 0.960938 9.78906C0.65625 9.50781 0.65625 9.01562 0.960938 8.73438L4.17188 5.5L0.960938 2.28906C0.65625 2.00781 0.65625 1.51562 0.960938 1.23438C1.24219 0.929688 1.73438 0.929688 2.01562 1.23438L5.76562 4.98438C6.07031 5.26562 6.07031 5.75781 5.76562 6.03906L2.01562 9.78906C1.875 9.92969 1.6875 10 1.5 10Z"
+                            fill="#3E3232" fill-opacity="0.5" />
+                    </svg>
+                </span>
+                <span class="single-top-url-sentence">
+                    How to Spend the Perfect Day on Croatia’s Most Magical Island
+                </span>
+            </div>
+            <div class="single-mc-news-contaier">
+                <div class="single-feature-content">
+                    <div class="single-top-content">
+                        <div class="single-top-content-back">
+                        </div>
+                        <div class="single-topc-title">
+                            <h1>
+                                How to Spend the Perfect Day on Croatia’s Most Magical Island
+                            </h1>
+                        </div>
+                        <div class="single-top-content-img">
+
+                            <img src="./assets/img/sport/unsplash_NrN5Rvl89Lo1.png">
+                        </div>
+
+                    </div>
+                    <div class="single-fc-element">
+                        <div class="single-fce-element">
+                            <div class="single-element-information">
+                                <div class="single-ei-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15"
+                                        fill="none">
+                                        <path
+                                            d="M4.53125 2.5H8.46875V1.40625C8.46875 1.05078 8.74219 0.75 9.125 0.75C9.48047 0.75 9.78125 1.05078 9.78125 1.40625V2.5H10.875C11.832 2.5 12.625 3.29297 12.625 4.25V13C12.625 13.9844 11.832 14.75 10.875 14.75H2.125C1.14062 14.75 0.375 13.9844 0.375 13V4.25C0.375 3.29297 1.14062 2.5 2.125 2.5H3.21875V1.40625C3.21875 1.05078 3.49219 0.75 3.875 0.75C4.23047 0.75 4.53125 1.05078 4.53125 1.40625V2.5ZM1.6875 13C1.6875 13.2461 1.87891 13.4375 2.125 13.4375H10.875C11.0938 13.4375 11.3125 13.2461 11.3125 13V6H1.6875V13Z"
+                                            fill="#3E3232" fill-opacity="0.5" />
+                                    </svg>
+                                </div>
+                                <div class="single-ei-information">
+                                    <span>July 14 , 2022</span>
+                                </div>
+                            </div>
+                            <div class="single-element-information">
+                                <div class="single-ei-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13"
+                                        fill="none">
+                                        <path
+                                            d="M4.4375 5.4375C3.94531 5.4375 3.5625 5.84766 3.5625 6.3125C3.5625 6.80469 3.94531 7.1875 4.4375 7.1875C4.90234 7.1875 5.28516 6.80469 5.28516 6.3125C5.28516 5.84766 4.90234 5.4375 4.4375 5.4375ZM7.5 5.4375C7.00781 5.4375 6.625 5.82031 6.625 6.3125C6.625 6.77734 7.03516 7.16016 7.5 7.16016C7.9375 7.16016 8.34766 6.75 8.34766 6.3125C8.34766 5.84766 7.96484 5.4375 7.5 5.4375ZM10.5625 5.4375C10.0703 5.4375 9.6875 5.84766 9.6875 6.3125C9.6875 6.80469 10.0977 7.1875 10.5625 7.1875C11.0273 7.1875 11.4102 6.80469 11.4102 6.3125C11.4375 5.84766 11.0273 5.4375 10.5625 5.4375ZM7.5 0.625C3.61719 0.625 0.5 3.16797 0.5 6.3125C0.5 7.59766 1.04688 8.80078 1.94922 9.75781C1.53906 10.8242 0.691406 11.7539 0.691406 11.7539C0.5 11.9453 0.472656 12.2188 0.554688 12.4648C0.636719 12.7383 0.882812 12.875 1.15625 12.875C2.82422 12.875 4.13672 12.1914 4.95703 11.6172C5.72266 11.8633 6.59766 12 7.5 12C11.3555 12 14.4727 9.45703 14.4727 6.33984C14.4727 3.22266 11.3555 0.625 7.5 0.625ZM7.5 10.6875C6.76172 10.6875 6.02344 10.5781 5.33984 10.3594L4.71094 10.168L4.19141 10.5508C3.80859 10.8242 3.26172 11.125 2.60547 11.3438C2.82422 11.0156 3.01562 10.6328 3.15234 10.25L3.45312 9.48438L2.87891 8.88281C2.38672 8.36328 1.8125 7.48828 1.8125 6.3125C1.8125 3.90625 4.35547 1.9375 7.47266 1.9375C10.5898 1.9375 13.1328 3.90625 13.1328 6.3125C13.1328 8.74609 10.6172 10.6875 7.5 10.6875Z"
+                                            fill="#3E3232" fill-opacity="0.5" />
+                                    </svg>
+                                </div>
+                                <div class="single-ei-information">
+                                    <span>comments : 35</span>
+                                    <!-- <span> 35</span> -->
+                                </div>
+                            </div>
+                            <div class="single-element-information">
+                                <div class="single-ei-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13"
+                                        fill="none">
+                                        <path
+                                            d="M12.7227 2.375H8.01953L6.67969 1.14453C6.35156 0.816406 5.91406 0.625 5.44922 0.625H2.22266C1.23828 0.625 0.472656 1.41797 0.472656 2.375V11.125C0.472656 12.1094 1.23828 12.875 2.22266 12.875H12.7227C13.6797 12.875 14.4727 12.1094 14.4727 11.125V4.125C14.4727 3.16797 13.707 2.375 12.7227 2.375ZM13.1602 11.125C13.1602 11.3711 12.9414 11.5625 12.7227 11.5625H2.22266C1.97656 11.5625 1.78516 11.3711 1.78516 11.125V2.375C1.78516 2.15625 1.97656 1.9375 2.22266 1.9375H5.42188C5.53125 1.9375 5.64062 1.99219 5.72266 2.07422L7.47266 3.6875H12.7227C12.9414 3.6875 13.1602 3.90625 13.1602 4.125V11.125Z"
+                                            fill="#3E3232" fill-opacity="0.5" />
+                                    </svg>
+                                </div>
+                                <div class="single-ei-information">
+                                    <span>catetory : sport</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-bottom-content">
+                        <div class="single-bc-content">
+                            <div class="single-bcfc-title">
+                                <h4>Don’t wait. The purpose of our lives is to be happy!</h4>
+                            </div>
+                            <div class="single-bcfc-content">
+                                <p>Upon arrival, your senses will be rewarded with the pleasant scent of lemongrass oil
+                                    used to clean the natural wood found throughout the room, creating a relaxing
+                                    atmosphere within the space.
+                                    A wonderful serenity has taken possession of my entire soul, like these sweet
+                                    mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm
+                                    of existence in this spot, which was created for the bliss of souls like mine. I am
+                                    so happy, my dear friend, so absorbed in the exquisite.</p>
+                            </div>
+                        </div>
+                        <div class="single-bc-image">
+                            <img src="./assets/img/sport/unsplash_dP6i0grBlTY.png">
+                        </div>
+                        <div class="single-bc-content">
+                            <div class="single-bcfc-title">
+                                <h4>Not how long, but how well you have lived is the main thing.</h4>
+                            </div>
+                            <div class="single-bcfc-content">
+                                <p>When you are ready to indulge your sense of excitement, check out the range of water-
+                                    sports opportunities at the resort’s on-site water-sports center. Want to leave your
+                                    stress on the water? The resort has kayaks, paddleboards, or the low-key pedal
+                                    boats. Snorkeling equipment is available as well, so you can experience the
+                                    ever-changing undersea environment.
+                                    Not only do visitors to a bed and breakfast get a unique perspective on the place
+                                    they are visiting, they have options for special packages not available in other
+                                    hotel settings. Bed and breakfasts can partner easily with local businesses for a
+                                    smoothly organized and highly personalized vacation experience. The Fife and Drum
+                                    Inn offers options such as the Historic Triangle Package that includes three nights
+                                    at the Inn, breakfasts, and admissions to historic Williamsburg, Jamestown, and
+                                    Yorktown. Bed and breakfasts also lend themselves to romance.
+                                    Part of the charm of a bed and breakfast is the uniqueness; art, décor, and food are
+                                    integrated to create a complete experience. For example, the Fife and Drum retains
+                                    the colonial feel of the area in all its guest rooms. Special features include
+                                    antique furnishings, elegant four poster beds in some guest rooms, as well folk art
+                                    and artifacts from the restoration period of the historic area available for guests
+                                    to enjoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-feature-sidebar">
+                    <div class="single-fs-information">
+                        <div class="single-fsi-event-button-group">
+                            <div class="single-event-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"
+                                    fill="none">
+                                    <path
+                                        d="M14.6992 0.886719C14.5078 0.75 14.2344 0.722656 14.0156 0.859375L1.32812 8.07812C1.10938 8.1875 0.972656 8.43359 1 8.67969C1 8.92578 1.16406 9.14453 1.38281 9.25391L5.59375 11.0039V14.0938C5.59375 14.3398 5.70312 14.5586 5.92188 14.6953C6.03125 14.7227 6.14062 14.75 6.22266 14.75C6.33203 14.75 6.46875 14.7227 6.57812 14.668L9.61328 12.6992L12.293 13.8477C12.375 13.875 12.457 13.9023 12.5664 13.9023C12.6758 13.9023 12.7852 13.8477 12.8672 13.793C13.0586 13.7109 13.168 13.5195 13.1953 13.3281L14.9453 1.51562C15.0273 1.26953 14.918 1.02344 14.6992 0.886719ZM11.0898 4.03125L5.97656 9.74609L3.13281 8.54297L11.0898 4.03125ZM6.87891 12.8906V11.5508L8.13672 12.0977L6.87891 12.8906ZM12.0469 12.2891L7.23438 10.2656L13.3594 3.45703L12.0469 12.2891Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                                <span>Share</span>
+                            </div>
+                            <div class="single-event-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
+                                    fill="none">
+                                    <path
+                                        d="M9.4375 0.75H1.5625C0.824219 0.75 0.25 1.35156 0.25 2.0625V13.875C0.25 14.5586 0.960938 14.9688 1.5625 14.6406L5.5 12.3438L9.41016 14.6406C10.0117 14.9688 10.75 14.5586 10.75 13.875V2.0625C10.75 1.35156 10.1484 0.75 9.4375 0.75ZM9.4375 13.1094L5.5 10.8125L1.5625 13.1094V2.22656C1.5625 2.14453 1.61719 2.0625 1.69922 2.0625H9.24609C9.35547 2.0625 9.4375 2.14453 9.4375 2.22656V13.1094Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                                <span>Marking</span>
+                            </div>
+                            <div class="single-event-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13"
+                                    fill="none">
+                                    <path
+                                        d="M4.9375 5.4375C4.44531 5.4375 4.0625 5.84766 4.0625 6.3125C4.0625 6.80469 4.44531 7.1875 4.9375 7.1875C5.40234 7.1875 5.78516 6.80469 5.78516 6.3125C5.78516 5.84766 5.40234 5.4375 4.9375 5.4375ZM8 5.4375C7.50781 5.4375 7.125 5.82031 7.125 6.3125C7.125 6.77734 7.53516 7.16016 8 7.16016C8.4375 7.16016 8.84766 6.75 8.84766 6.3125C8.84766 5.84766 8.46484 5.4375 8 5.4375ZM11.0625 5.4375C10.5703 5.4375 10.1875 5.84766 10.1875 6.3125C10.1875 6.80469 10.5977 7.1875 11.0625 7.1875C11.5273 7.1875 11.9102 6.80469 11.9102 6.3125C11.9375 5.84766 11.5273 5.4375 11.0625 5.4375ZM8 0.625C4.11719 0.625 1 3.16797 1 6.3125C1 7.59766 1.54688 8.80078 2.44922 9.75781C2.03906 10.8242 1.19141 11.7539 1.19141 11.7539C1 11.9453 0.972656 12.2188 1.05469 12.4648C1.13672 12.7383 1.38281 12.875 1.65625 12.875C3.32422 12.875 4.63672 12.1914 5.45703 11.6172C6.22266 11.8633 7.09766 12 8 12C11.8555 12 14.9727 9.45703 14.9727 6.33984C14.9727 3.22266 11.8555 0.625 8 0.625ZM8 10.6875C7.26172 10.6875 6.52344 10.5781 5.83984 10.3594L5.21094 10.168L4.69141 10.5508C4.30859 10.8242 3.76172 11.125 3.10547 11.3438C3.32422 11.0156 3.51562 10.6328 3.65234 10.25L3.95312 9.48438L3.37891 8.88281C2.88672 8.36328 2.3125 7.48828 2.3125 6.3125C2.3125 3.90625 4.85547 1.9375 7.97266 1.9375C11.0898 1.9375 13.6328 3.90625 13.6328 6.3125C13.6328 8.74609 11.1172 10.6875 8 10.6875Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                        <div class="single-fsi-user-info">
+                            <div class="single-fsiui-img">
+                                <img src="./assets/img/avatar/unsplash_kq8dGNS1lLk.png">
+                            </div>
+                            <div class="single-user-event">
+                                <div class="single-fsiui-info">
+                                    <div class="single-info-name">
+                                        <h5>Louis Hoebregts</h5>
+                                    </div>
+                                    <div class="single-info-count">27 post</div>
+                                </div>
+                                <div class="single-fsiui-follow">
+                                    <div class="follow-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <path
+                                                d="M11.6875 5.75C11.6875 6.24219 11.2773 6.65234 10.8125 6.65234H6.875V10.5898C6.875 11.0547 6.46484 11.4375 6 11.4375C5.50781 11.4375 5.125 11.0547 5.125 10.5898V6.65234H1.1875C0.695312 6.65234 0.3125 6.24219 0.3125 5.75C0.3125 5.28516 0.695312 4.90234 1.1875 4.90234H5.125V0.964844C5.125 0.472656 5.50781 0.0625 6 0.0625C6.46484 0.0625 6.875 0.472656 6.875 0.964844V4.90234H10.8125C11.2773 4.875 11.6875 5.28516 11.6875 5.75Z"
+                                                fill="white" />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-fs-tag-bar">
+                        <div class="single-fstb-title">
+                            <div></div>
+                            <h4>Tags</h4>
+                        </div>
+                        <div class="single-fstb-content">
+                            <h6>Montenegro</h6>
+                            <h6>Visit Croatia</h6>
+                            <h6>Luxury Travel</h6>
+                            <h6>Travel Log</h6>
+                            <h6>Paradise Island</h6>
+                            <h6>Travel Info</h6>
+                        </div>
+                    </div>
+                    <div class="single-fs-top-post">
+                        <div class="single-fstb-title">
+                            <div></div>
+                            <h4>Top Post</h4>
+                        </div>
+                        <div class="single-fstp-content">
+                            <div class="single-fstp-content-list">
+                                <div class="single-fstp-content-list-img">
+                                    <img src="./assets/img/car/unsplash_U06nswCc4l4.png">
+                                </div>
+                                <div class="single-fstp-content-list-content">
+                                    <div class="single-fstp-content-list-content-title">
+                                        <span>How to Spend the Perfect Day on Croatia’s Most Magical Island</span>
+                                    </div>
+                                    <div class="single-fstp-content-list-content-content">
+                                        <span>Subhead</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-fstp-content-list">
+                                <div class="single-fstp-content-list-img">
+                                    <img src="./assets/img/animal/unsplash_SVwOposMxHY.png">
+                                </div>
+                                <div class="single-fstp-content-list-content">
+                                    <div class="single-fstp-content-list-content-title">
+                                        <span>How to Spend the Perfect Day on Croatia’s Most Magical Island</span>
+                                    </div>
+                                    <div class="single-fstp-content-list-content-content">
+                                        <span>Subhead</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-fstp-content-list">
+                                <div class="single-fstp-content-list-img">
+                                    <img src="./assets/img/dance/unsplash_2AQvpTk3nVQ.png">
+                                </div>
+                                <div class="single-fstp-content-list-content">
+                                    <div class="single-fstp-content-list-content-title">
+                                        <span>How to Spend the Perfect Day on Croatia’s Most Magical Island</span>
+                                    </div>
+                                    <div class="single-fstp-content-list-content-content">
+                                        <span>Subhead</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-fstp-content-list">
+                                <div class="single-fstp-content-list-img">
+                                    <img src="./assets/img/food/unsplash_tkfRSPt-jdk.png">
+                                </div>
+                                <div class="single-fstp-content-list-content">
+                                    <div class="single-fstp-content-list-content-title">
+                                        <span>How to Spend the Perfect Day on Croatia’s Most Magical Island</span>
+                                    </div>
+                                    <div class="single-fstp-content-list-content-content">
+                                        <span>Subhead</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-fstp-content-list">
+                                <div class="single-fstp-content-list-img">
+                                    <img src="./assets/imG/sport/unsplash_2aHSA17X17c.png">
+                                </div>
+                                <div class="single-fstp-content-list-content">
+                                    <div class="single-fstp-content-list-content-title">
+                                        <span>How to Spend the Perfect Day on Croatia’s Most Magical Island</span>
+                                    </div>
+                                    <div class="single-fstp-content-list-content-content">
+                                        <span>Subhead</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-fs-advertising">
+                        <div class="single-fsa-content">
+                            <img src="./assets/img/abstract/unsplash_9XngoIpxcEo.png">
+                        </div>
+                        <div class="single-fsa-content">
+                            <img src="./assets/img/abstract/unsplash_VT4rx775FT4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-mc-comment-container">
+                <div class="single-comment-part">
+                    <div class="single-feature-comment">
+                        <div class="single-fc-title">
+                            <div></div>
+                            <h4>Comments</h4>
+                        </div>
+                        <div class="single-fc-comment">
+                            <div class="single-fcc-list">
+                                <div class="single-fccl-user-information">
+                                    <div class="single-fcclui-img">
+                                        <img src="./assets/img/avatar/unsplash_L2dTmhQzx4Q.png">
+                                    </div>
+                                    <div class="single-fcclui-info">
+                                        <div class="single-user-infor-com">
+                                            <div class="infor-com-name">
+                                                <h5>Jon Kantner</h5>
+                                            </div>
+                                            <div class="infor-com-post-date">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                    viewBox="0 0 14 15" fill="none">
+                                                    <path
+                                                        d="M5.03125 2.5H8.96875V1.40625C8.96875 1.05078 9.24219 0.75 9.625 0.75C9.98047 0.75 10.2812 1.05078 10.2812 1.40625V2.5H11.375C12.332 2.5 13.125 3.29297 13.125 4.25V13C13.125 13.9844 12.332 14.75 11.375 14.75H2.625C1.64062 14.75 0.875 13.9844 0.875 13V4.25C0.875 3.29297 1.64062 2.5 2.625 2.5H3.71875V1.40625C3.71875 1.05078 3.99219 0.75 4.375 0.75C4.73047 0.75 5.03125 1.05078 5.03125 1.40625V2.5ZM2.1875 13C2.1875 13.2461 2.37891 13.4375 2.625 13.4375H11.375C11.5938 13.4375 11.8125 13.2461 11.8125 13V6H2.1875V13Z"
+                                                        fill="#3E3232" fill-opacity="0.5" />
+                                                </svg>
+                                                <span>2022 04 July</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-user-reply-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14"
+                                                viewBox="0 0 15 14" fill="none">
+                                                <path
+                                                    d="M13.7539 5.95703L8.94141 10.0859C8.53125 10.4414 7.875 10.1406 7.875 9.59375V7.21484C3.60938 7.26953 1.80469 8.30859 3.03516 12.2734C3.17188 12.7109 2.625 13.0664 2.26953 12.793C1.06641 11.918 0 10.25 0 8.58203C0 4.42578 3.47266 3.52344 7.875 3.46875V1.30859C7.875 0.734375 8.53125 0.433594 8.94141 0.789062L13.7539 4.91797C14.0547 5.21875 14.0547 5.68359 13.7539 5.95703Z"
+                                                    fill="#3E3232" fill-opacity="0.5" />
+                                            </svg>
+                                            <span>Reply</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-fccl-content">
+                                    <p>When you are ready to indulge your sense of excitement, check out the range of
+                                        water- sports opportunities at the resort’s on-site water-sports center. Want to
+                                        leave your stress on the water? The resort has kayaks, paddleboards, or the
+                                        low-key pedal boats.</p>
+                                </div>
+                            </div>
+                            <div class="single-fcc-answer">
+                                <div class="single-fcc-answer-background"></div>
+                                <div class="single-fcc-answer-list">
+                                    <div class="single-fcc-list-reply">
+                                        <div class="single-fcc-list-reply-list">
+                                            <div class="single-fccl-user-information">
+                                                <div class="single-fcclui-img">
+                                                    <img src="./assets/img/avatar/unsplash_nKZuhvCGGQU.png">
+                                                </div>
+                                                <div class="single-fcclui-info">
+                                                    <div class="single-user-infor-com">
+                                                        <div class="infor-com-name">
+                                                            <h5>Cassie Evans</h5>
+                                                        </div>
+                                                        <div class="infor-com-post-date">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                height="15" viewBox="0 0 14 15" fill="none">
+                                                                <path
+                                                                    d="M5.03125 2.5H8.96875V1.40625C8.96875 1.05078 9.24219 0.75 9.625 0.75C9.98047 0.75 10.2812 1.05078 10.2812 1.40625V2.5H11.375C12.332 2.5 13.125 3.29297 13.125 4.25V13C13.125 13.9844 12.332 14.75 11.375 14.75H2.625C1.64062 14.75 0.875 13.9844 0.875 13V4.25C0.875 3.29297 1.64062 2.5 2.625 2.5H3.71875V1.40625C3.71875 1.05078 3.99219 0.75 4.375 0.75C4.73047 0.75 5.03125 1.05078 5.03125 1.40625V2.5ZM2.1875 13C2.1875 13.2461 2.37891 13.4375 2.625 13.4375H11.375C11.5938 13.4375 11.8125 13.2461 11.8125 13V6H2.1875V13Z"
+                                                                    fill="#3E3232" fill-opacity="0.5" />
+                                                            </svg>
+                                                            <span>2022 04 July</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-fccl-content">
+                                                <p>a river or a lake island may be called an eyot or ait, and a small
+                                                    island off the coast may be called a holm. Sedimentary islands in
+                                                    the Ganges delta are called chars. A grouping of geographically or
+                                                    geologically related islands, such as the Philippines, is referred
+                                                    to as an archipelago. </p>
+                                            </div>
+                                        </div>
+                                        <div class="single-fcc-list-reply-list">
+                                            <div class="single-fccl-user-information">
+                                                <div class="single-fcclui-img">
+                                                    <img src="./assets/img/avatar/IMG_03999 1.png">
+                                                </div>
+                                                <div class="single-fcclui-info">
+                                                    <div class="single-user-infor-com">
+                                                        <div class="infor-com-name">
+                                                            <h5>Cassie Evans</h5>
+                                                        </div>
+                                                        <div class="infor-com-post-date">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                height="15" viewBox="0 0 14 15" fill="none">
+                                                                <path
+                                                                    d="M5.03125 2.5H8.96875V1.40625C8.96875 1.05078 9.24219 0.75 9.625 0.75C9.98047 0.75 10.2812 1.05078 10.2812 1.40625V2.5H11.375C12.332 2.5 13.125 3.29297 13.125 4.25V13C13.125 13.9844 12.332 14.75 11.375 14.75H2.625C1.64062 14.75 0.875 13.9844 0.875 13V4.25C0.875 3.29297 1.64062 2.5 2.625 2.5H3.71875V1.40625C3.71875 1.05078 3.99219 0.75 4.375 0.75C4.73047 0.75 5.03125 1.05078 5.03125 1.40625V2.5ZM2.1875 13C2.1875 13.2461 2.37891 13.4375 2.625 13.4375H11.375C11.5938 13.4375 11.8125 13.2461 11.8125 13V6H2.1875V13Z"
+                                                                    fill="#3E3232" fill-opacity="0.5" />
+                                                            </svg>
+                                                            <span>2022 04 July</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-fccl-content">
+                                                <p>a river or a lake island may be called an eyot or ait, and a small
+                                                    island off the coast may be called a holm. Sedimentary islands in
+                                                    the Ganges delta are called chars. A grouping of geographically or
+                                                    geologically related islands, such as the Philippines, is referred
+                                                    to as an archipelago. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-fcc-list">
+                                <div class="single-fccl-user-information">
+                                    <div class="single-fcclui-img">
+                                        <img src="./assets/img/avatar/unsplash_L2dTmhQzx4Q.png">
+                                    </div>
+                                    <div class="single-fcclui-info">
+                                        <div class="single-user-infor-com">
+                                            <div class="infor-com-name">
+                                                <h5>Jon Kantner</h5>
+                                            </div>
+                                            <div class="infor-com-post-date">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                    viewBox="0 0 14 15" fill="none">
+                                                    <path
+                                                        d="M5.03125 2.5H8.96875V1.40625C8.96875 1.05078 9.24219 0.75 9.625 0.75C9.98047 0.75 10.2812 1.05078 10.2812 1.40625V2.5H11.375C12.332 2.5 13.125 3.29297 13.125 4.25V13C13.125 13.9844 12.332 14.75 11.375 14.75H2.625C1.64062 14.75 0.875 13.9844 0.875 13V4.25C0.875 3.29297 1.64062 2.5 2.625 2.5H3.71875V1.40625C3.71875 1.05078 3.99219 0.75 4.375 0.75C4.73047 0.75 5.03125 1.05078 5.03125 1.40625V2.5ZM2.1875 13C2.1875 13.2461 2.37891 13.4375 2.625 13.4375H11.375C11.5938 13.4375 11.8125 13.2461 11.8125 13V6H2.1875V13Z"
+                                                        fill="#3E3232" fill-opacity="0.5" />
+                                                </svg>
+                                                <span>2022 04 July</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-user-reply-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14"
+                                                viewBox="0 0 15 14" fill="none">
+                                                <path
+                                                    d="M13.7539 5.95703L8.94141 10.0859C8.53125 10.4414 7.875 10.1406 7.875 9.59375V7.21484C3.60938 7.26953 1.80469 8.30859 3.03516 12.2734C3.17188 12.7109 2.625 13.0664 2.26953 12.793C1.06641 11.918 0 10.25 0 8.58203C0 4.42578 3.47266 3.52344 7.875 3.46875V1.30859C7.875 0.734375 8.53125 0.433594 8.94141 0.789062L13.7539 4.91797C14.0547 5.21875 14.0547 5.68359 13.7539 5.95703Z"
+                                                    fill="#3E3232" fill-opacity="0.5" />
+                                            </svg>
+                                            <span>Reply</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-fccl-content">
+                                    <p>When you are ready to indulge your sense of excitement, check out the range of
+                                        water- sports opportunities at the resort’s on-site water-sports center. Want to
+                                        leave your stress on the water? The resort has kayaks, paddleboards, or the
+                                        low-key pedal boats.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-post-comment">
+                        <div class="single-fc-title">
+                            <div></div>
+                            <h4>Add A Comment</h4>
+                        </div>
+                        <div class="single-pc-pan">
+                            <div class="single-pcp-add-info">
+                                <div class="single-pcp-user-info">
+                                    <div class="single-comment-user-info-input">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name">
+                                    </div>
+                                    <div class="single-comment-user-info-input">
+                                        <label for="website">Website</label>
+                                        <input type="text" id="website">
+                                    </div>
+                                    <div class="single-comment-user-info-input">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email">
+                                    </div>
+                                </div>
+                                <div class="single-pcp-comment">
+                                    <label>Comment</label>
+                                    <textarea placeholder="Search Anything"></textarea>
+                                </div>
+                            </div>
+                            <div class="single-pcp-add-rate">
+                                <div class="single-choose-rate-box">
+                                    <div class="single-crb-text">Rate the usefulness of the article</div>
+                                    <div class="single-crb-rate">
+                                        <div class="single-crbr-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M10.25 12.3125C9.9375 12.5938 9.46875 12.5938 9.1875 12.2812C8.96875 12.0312 8.5625 11.75 8 11.75C7.40625 11.75 7 12.0312 6.78125 12.2812C6.5 12.5938 6.03125 12.5938 5.71875 12.3125C5.40625 12.0312 5.40625 11.5625 5.6875 11.25C6.125 10.7812 6.90625 10.25 8 10.25C9.0625 10.25 9.84375 10.7812 10.2812 11.25C10.5625 11.5625 10.5625 12.0312 10.25 12.3125ZM4.5 7.5C4.5 7.25 4.59375 7 4.78125 6.8125L3.8125 6.5C3.5625 6.40625 3.4375 6.125 3.5 5.84375C3.59375 5.59375 3.875 5.4375 4.15625 5.53125L7.15625 6.53125C7.40625 6.625 7.53125 6.90625 7.46875 7.1875C7.375 7.4375 7.09375 7.5625 6.8125 7.5L6.5 7.375C6.5 7.40625 6.5 7.46875 6.5 7.5C6.5 8.0625 6.0625 8.5 5.5 8.5C4.9375 8.5 4.5 8.0625 4.5 7.5ZM11.5 7.5C11.5 8.0625 11.0625 8.5 10.5 8.5C9.9375 8.5 9.5 8.0625 9.5 7.5C9.5 7.46875 9.5 7.40625 9.5 7.375L9.15625 7.5C8.875 7.5625 8.59375 7.4375 8.5 7.1875C8.4375 6.90625 8.5625 6.625 8.8125 6.53125L11.8125 5.53125C12.0938 5.4375 12.375 5.59375 12.4688 5.84375C12.5312 6.125 12.4062 6.40625 12.1562 6.5L11.1875 6.8125C11.375 6.96875 11.5 7.25 11.5 7.5ZM0 8C0 3.59375 3.5625 0 8 0C12.4062 0 16 3.59375 16 8C16 12.4375 12.4062 16 8 16C3.5625 16 0 12.4375 0 8ZM8 14.5C11.5625 14.5 14.5 11.5938 14.5 8C14.5 4.4375 11.5625 1.5 8 1.5C4.40625 1.5 1.5 4.4375 1.5 8C1.5 11.5938 4.40625 14.5 8 14.5Z"
+                                                    fill="#FC5C65" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M4.5 6.5C4.5 5.96875 4.9375 5.5 5.5 5.5C6.0625 5.5 6.5 5.96875 6.5 6.5C6.5 7.0625 6.0625 7.5 5.5 7.5C4.9375 7.5 4.5 7.0625 4.5 6.5ZM11.5 6.5C11.5 7.0625 11.0625 7.5 10.5 7.5C9.9375 7.5 9.5 7.0625 9.5 6.5C9.5 5.96875 9.9375 5.5 10.5 5.5C11.0625 5.5 11.5 5.96875 11.5 6.5ZM10.25 10.25C10.6562 10.25 11 10.5938 11 11C11 11.4375 10.6562 11.75 10.25 11.75H5.75C5.3125 11.75 5 11.4375 5 11C5 10.5938 5.3125 10.25 5.75 10.25H10.25ZM16 8C16 12.4375 12.4062 16 8 16C3.5625 16 0 12.4375 0 8C0 3.59375 3.5625 0 8 0C12.4062 0 16 3.59375 16 8ZM8 14.5C11.5625 14.5 14.5 11.5938 14.5 8C14.5 4.4375 11.5625 1.5 8 1.5C4.40625 1.5 1.5 4.4375 1.5 8C1.5 11.5938 4.40625 14.5 8 14.5Z"
+                                                    fill="#FA8231" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M10.9062 9.65625C11.5 9.5 12.0312 10.0312 11.6875 10.5312C10.9375 11.7188 9.5625 12.5 7.96875 12.5C6.40625 12.5 5.03125 11.7188 4.25 10.5312C3.9375 10.0312 4.46875 9.5 5.0625 9.65625C5.96875 9.875 6.9375 9.96875 7.96875 9.96875C9.03125 9.96875 10 9.875 10.9062 9.65625ZM7 6C7 7.125 6.53125 8 6 8C5.4375 8 5 7.125 5 6C5 4.90625 5.4375 4 6 4C6.53125 4 7 4.90625 7 6ZM9 6C9 4.90625 9.4375 4 10 4C10.5312 4 11 4.90625 11 6C11 7.125 10.5312 8 10 8C9.4375 8 9 7.125 9 6ZM16 8C16 12.4375 12.4062 16 8 16C3.5625 16 0 12.4375 0 8C0 3.59375 3.5625 0 8 0C12.4062 0 16 3.59375 16 8ZM8 1.5C4.40625 1.5 1.5 4.4375 1.5 8C1.5 11.5938 4.40625 14.5 8 14.5C11.5625 14.5 14.5 11.5938 14.5 8C14.5 4.4375 11.5625 1.5 8 1.5Z"
+                                                    fill="#F7B731" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M10.9062 9.65625C11.5 9.5 12.0312 10.0312 11.6875 10.5312C10.9375 11.7188 9.5625 12.5 7.96875 12.5C6.40625 12.5 5.03125 11.7188 4.25 10.5312C3.9375 10.0312 4.46875 9.5 5.0625 9.65625C5.96875 9.875 6.9375 9.96875 7.96875 9.96875C9.03125 9.96875 10 9.875 10.9062 9.65625ZM7.4375 5.5625L6.90625 7.59375C6.84375 7.875 6.5625 8.03125 6.28125 7.96875L4.25 7.40625C3.6875 7.28125 3.375 6.6875 3.53125 6.15625C3.65625 5.59375 4.25 5.25 4.78125 5.40625L5.3125 5.53125L5.4375 5.03125C5.59375 4.46875 6.15625 4.15625 6.71875 4.3125C7.28125 4.4375 7.59375 5.03125 7.4375 5.5625ZM10.6562 5.53125L11.1875 5.40625C11.7188 5.25 12.3125 5.59375 12.4375 6.15625C12.5938 6.6875 12.2812 7.28125 11.7188 7.40625L9.6875 7.96875C9.40625 8.03125 9.125 7.875 9.0625 7.59375L8.53125 5.5625C8.375 5.03125 8.6875 4.4375 9.25 4.3125C9.8125 4.15625 10.375 4.46875 10.5312 5.03125L10.6562 5.53125ZM16 8C16 12.4375 12.4062 16 8 16C3.5625 16 0 12.4375 0 8C0 3.59375 3.5625 0 8 0C12.4062 0 16 3.59375 16 8ZM8 1.5C4.40625 1.5 1.5 4.4375 1.5 8C1.5 11.5938 4.40625 14.5 8 14.5C11.5625 14.5 14.5 11.5938 14.5 8C14.5 4.4375 11.5625 1.5 8 1.5Z"
+                                                    fill="#45AAF2" />
+                                            </svg>
+                                        </div>
+                                        <div class="single-crbr-status-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M6.44141 5.34375L7.48047 5.48047C7.5625 5.48047 7.64453 5.53516 7.67188 5.61719C7.69922 5.69922 7.67188 5.78125 7.61719 5.83594L6.85156 6.57422L7.04297 7.61328C7.07031 7.69531 7.01562 7.77734 6.96094 7.83203C6.87891 7.88672 6.79688 7.88672 6.71484 7.83203L5.78516 7.33984L4.88281 7.83203C4.80078 7.88672 4.71875 7.88672 4.63672 7.83203C4.58203 7.77734 4.52734 7.69531 4.55469 7.61328L4.74609 6.57422L3.98047 5.83594C3.92578 5.78125 3.89844 5.69922 3.92578 5.61719C3.95312 5.53516 4.03516 5.48047 4.11719 5.48047L5.15625 5.34375L5.59375 4.38672C5.64844 4.30469 5.70312 4.25 5.78516 4.25C5.89453 4.25 5.94922 4.30469 6.00391 4.38672L6.44141 5.34375ZM10.8164 5.34375L11.8555 5.48047C11.9375 5.48047 12.0195 5.53516 12.0469 5.61719C12.0742 5.69922 12.0469 5.78125 11.9922 5.83594L11.2266 6.57422L11.418 7.61328C11.4453 7.69531 11.3906 7.77734 11.3359 7.83203C11.2539 7.88672 11.1719 7.88672 11.0898 7.83203L10.1875 7.33984L9.25781 7.83203C9.17578 7.88672 9.09375 7.88672 9.01172 7.83203C8.95703 7.77734 8.90234 7.69531 8.92969 7.61328L9.12109 6.57422L8.35547 5.83594C8.30078 5.78125 8.27344 5.69922 8.30078 5.61719C8.32812 5.53516 8.41016 5.48047 8.49219 5.48047L9.53125 5.34375L9.96875 4.38672C10.0234 4.30469 10.0781 4.25 10.1875 4.25C10.2695 4.25 10.3242 4.30469 10.3789 4.38672L10.8164 5.34375ZM10.543 9.19922C11.0625 9.0625 11.5273 9.52734 11.2266 9.96484C10.5703 11.0039 9.36719 11.6875 7.97266 11.6875C6.60547 11.6875 5.40234 11.0039 4.71875 9.96484C4.44531 9.52734 4.91016 9.0625 5.42969 9.19922C6.22266 9.39062 7.07031 9.47266 7.97266 9.47266C8.90234 9.47266 9.75 9.39062 10.543 9.19922ZM1 7.75C1 3.89453 4.11719 0.75 8 0.75C11.8555 0.75 15 3.89453 15 7.75C15 11.6328 11.8555 14.75 8 14.75C4.11719 14.75 1 11.6328 1 7.75ZM8 13.4375C11.1172 13.4375 13.6875 10.8945 13.6875 7.75C13.6875 4.63281 11.1172 2.0625 8 2.0625C4.85547 2.0625 2.3125 4.63281 2.3125 7.75C2.3125 10.8945 4.85547 13.4375 8 13.4375Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <span>good</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-rate-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4.9375 6.4375C4.44531 6.4375 4.0625 6.84766 4.0625 7.3125C4.0625 7.80469 4.44531 8.1875 4.9375 8.1875C5.40234 8.1875 5.78516 7.80469 5.78516 7.3125C5.78516 6.84766 5.40234 6.4375 4.9375 6.4375ZM8 6.4375C7.50781 6.4375 7.125 6.82031 7.125 7.3125C7.125 7.77734 7.53516 8.16016 8 8.16016C8.4375 8.16016 8.84766 7.75 8.84766 7.3125C8.84766 6.84766 8.46484 6.4375 8 6.4375ZM11.0625 6.4375C10.5703 6.4375 10.1875 6.84766 10.1875 7.3125C10.1875 7.80469 10.5977 8.1875 11.0625 8.1875C11.5273 8.1875 11.9102 7.80469 11.9102 7.3125C11.9375 6.84766 11.5273 6.4375 11.0625 6.4375ZM8 1.625C4.11719 1.625 1 4.16797 1 7.3125C1 8.59766 1.54688 9.80078 2.44922 10.7578C2.03906 11.8242 1.19141 12.7539 1.19141 12.7539C1 12.9453 0.972656 13.2188 1.05469 13.4648C1.13672 13.7383 1.38281 13.875 1.65625 13.875C3.32422 13.875 4.63672 13.1914 5.45703 12.6172C6.22266 12.8633 7.09766 13 8 13C11.8555 13 14.9727 10.457 14.9727 7.33984C14.9727 4.22266 11.8555 1.625 8 1.625ZM8 11.6875C7.26172 11.6875 6.52344 11.5781 5.83984 11.3594L5.21094 11.168L4.69141 11.5508C4.30859 11.8242 3.76172 12.125 3.10547 12.3438C3.32422 12.0156 3.51562 11.6328 3.65234 11.25L3.95312 10.4844L3.37891 9.88281C2.88672 9.36328 2.3125 8.48828 2.3125 7.3125C2.3125 4.90625 4.85547 2.9375 7.97266 2.9375C11.0898 2.9375 13.6328 4.90625 13.6328 7.3125C13.6328 9.74609 11.1172 11.6875 8 11.6875Z" fill="white"/>
+                                        </svg>
+                                        <span>Send Comment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-sidebar-for-comment"></div>
+            </div>
+            <div class="index-popular-post swiper single-bottom">
+                <div class="index-ppfs-gradient"></div>
+
+                <div class="index-pp-header-section">
+                    <div class="index-pphs-title-section">
+                        <div></div>
+                        <h4>Popular Posts</h4>
+                    </div>
+                    <div class="index-pphs-arrow">
+                        <div class="index-scsli-left-arrow index-scsli-right_arrow arrow swiper-left-arrow"
+                            id="index-scsli-left-arrow">
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 13C6.71875 13 6.46875 12.9062 6.28125 12.7188L1.28125 7.71875C0.875 7.34375 0.875 6.6875 1.28125 6.3125L6.28125 1.3125C6.65625 0.90625 7.3125 0.90625 7.6875 1.3125C8.09375 1.6875 8.09375 2.34375 7.6875 2.71875L3.40625 7L7.6875 11.3125C8.09375 11.6875 8.09375 12.3438 7.6875 12.7188C7.5 12.9062 7.25 13 7 13Z"
+                                    fill="#3E3232" />
+                            </svg>
+                        </div>
+                        <div class="index-scsli-right-arrow index-scsli-right_arrow arrow swiper-right-arrow"
+                            id="index-scsli-right-arrow">
+                            <svg id="right-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 18C9.71875 18 9.46875 17.9062 9.28125 17.7188C8.875 17.3438 8.875 16.6875 9.28125 16.3125L13.5625 12L9.28125 7.71875C8.875 7.34375 8.875 6.6875 9.28125 6.3125C9.65625 5.90625 10.3125 5.90625 10.6875 6.3125L15.6875 11.3125C16.0938 11.6875 16.0938 12.3438 15.6875 12.7188L10.6875 17.7188C10.5 17.9062 10.25 18 10 18Z"
+                                    fill="#3E3232" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-pp-footer-section swiper-container" style="overflow: hidden;">
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/sport/unsplash_NrN5Rvl89Lo.png">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/technology/unsplash_mP7aPSUm7aE.jpg">
+                        <div class="title">
+                            <h5>How to choose the right laptop for programming</h5>
+                        </div>
+                        <div class="content">
+                            <p>Choosing the right laptop for programming can be a tough process. It’s easy to get
+                                confused while researching the various options. There are many different laptop models
+                                out there, each with a different set of trade-offs</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/car/unsplash_-js8KGQLfhw.jpg">
+                        <div class="title">
+                            <h5>How we built the first real self-driving car</h5>
+                        </div>
+                        <div class="content">
+                            <p>Electric self-driving cars will save millions of lives and significantly accelerate the
+                                world’s transition to sustainable energy, but only when</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/food/unsplash_DGHy9KgdTj0.jpg">
+                        <div class="title">
+                            <h5>How to Persuade Your Parents to Buy Fast Food</h5>
+                        </div>
+                        <div class="content">
+                            <p>Parents often don’t want to buy fast food. They may be worried that it’s too expensive,
+                                unhealthy, or not worth the effort and time.</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/sport/unsplash_NrN5Rvl89Lo.png">
+                        <div class="title">
+                            <h5>Opening Day of Boating Seasdfsdfson, Seattle WA</h5>
+                        </div>
+                        <div class="content">
+                            <p>Of course the Puget Sound is very watery, and where there is water, there are boats.
+                                Today is the Grand Opening of Boating Season when traffic gets stalled in the University
+                                District (UW) while the Montlake Bridge</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/technology/unsplash_mP7aPSUm7aE.jpg">
+                        <div class="title">
+                            <h5>How to choose the right laptop for programming</h5>
+                        </div>
+                        <div class="content">
+                            <p>Choosing the right laptop for programming can be a tough process. It’s easy to get
+                                confused while researching the various options. There are many different laptop models
+                                out there, each with a different set of trade-offs</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/car/unsplash_-js8KGQLfhw.jpg">
+                        <div class="title">
+                            <h5>How we built the first real self-driving car</h5>
+                        </div>
+                        <div class="content">
+                            <p>Electric self-driving cars will save millions of lives and significantly accelerate the
+                                world’s transition to sustainable energy, but only when</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-ppfs-post-card">
+                        <img src="./assets/img/food/unsplash_DGHy9KgdTj0.jpg">
+                        <div class="title">
+                            <h5>How to Persuade Your Parents to Buy Fast Food</h5>
+                        </div>
+                        <div class="content">
+                            <p>Parents often don’t want to buy fast food. They may be worried that it’s too expensive,
+                                unhealthy, or not worth the effort and time.</p>
+                        </div>
+                        <div class="index-contributor">
+                            <div class="index-contributor-div">
+
+                                <img src="./assets/img/avatar/unsplash_ZHvM3XIOHoE.png">
+                                <div class="index-contributor-intro">
+                                    <div class="name">James</div>
+                                    <div class="date">August 18 , 2022</div>
+                                </div>
+
+                            </div>
+                            <div class="read-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none">
+                                    <path
+                                        d="M15.625 0H4.375C3.32031 0 2.5 0.859375 2.5 1.875V18.75C2.5 19.7266 3.51562 20.3125 4.375 19.8438L10 16.5625L15.5859 19.8438C16.4453 20.3125 17.5 19.7266 17.5 18.75V1.875C17.5 0.859375 16.6406 0 15.625 0ZM15.625 17.6562L10 14.375L4.375 17.6562V2.10938C4.375 1.99219 4.45312 1.875 4.57031 1.875H15.3516C15.5078 1.875 15.625 1.99219 15.625 2.10938V17.6562Z"
+                                        fill="#3E3232" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="left_footer">
+            <div class="left_footer_section">
+                <div class="left_footer_section_one">
+                    <div class="left_footer_mega_news">
+                        <div class="left_footer_mega_news_title">
+                            <div class="footer_svg">
+                            </div>
+                            <p>Mega News</p>
+                        </div>
+                        <div class="left_footer_mega_news_content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Egestas purus viverra
+                                accumsan in nisl nisi. Arcu cursus vitae congue
+                                mauris rhoncus aenean vel elit scelerisque. In
+                                egestas erat imperdiet sed euismod nisi porta lorem
+                                mollis. Morbi tristique senectus et netus. Mattis
+                                pellentesque id nibh tortor id aliquet lectus proin
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left_footer_newsletters">
+                        <div class="left_footer_mega_news_title">
+                            <div class="footer_svg">
+                            </div>
+                            <p>Newsletters</p>
+                        </div>
+                        <div class="left_footer_newsletters_inputbox">
+                            <input class="left_footer_newsletters_input_tag" placeholder="Write Your Email...">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 16"
+                                fill="none">
+                                <path
+                                    d="M18.125 0.5C19.1406 0.5 20 1.35938 20 2.375C20 3 19.6875 3.54688 19.2188 3.89844L10.7422 10.2656C10.2734 10.6172 9.6875 10.6172 9.21875 10.2656L0.742188 3.89844C0.273438 3.54688 0 3 0 2.375C0 1.35938 0.820312 0.5 1.875 0.5H18.125ZM8.47656 11.2812C9.375 11.9453 10.5859 11.9453 11.4844 11.2812L20 4.875V13C20 14.4062 18.8672 15.5 17.5 15.5H2.5C1.09375 15.5 0 14.4062 0 13V4.875L8.47656 11.2812Z"
+                                    fill="#3E3232" fill-opacity="0.75" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_footer_section_two">
+                    <div class="left_footer_categories">
+                        <div class="left_footer_mega_news_title">
+                            <div class="footer_svg">
+                            </div>
+                            <p>Categories</p>
+                        </div>
+                        <div class="left_footer_categories_content">
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                            <p href="#">Culture</p>
+                        </div>
+                    </div>
+                    <div class="left_footer_social_network">
+                        <div class="left_footer_mega_news_title">
+                            <div class="footer_svg">
+                            </div>
+                            <p>Social Network</p>
+                        </div>
+                        <div class="left_footer_social_network_buttons">
+                            <div class="left_footer_instrgam_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M8 4.60547C9.72266 4.60547 11.1445 6.02734 11.1445 7.75C11.1445 9.5 9.72266 10.8945 8 10.8945C6.25 10.8945 4.85547 9.5 4.85547 7.75C4.85547 6.02734 6.25 4.60547 8 4.60547ZM8 9.80078C9.12109 9.80078 10.0234 8.89844 10.0234 7.75C10.0234 6.62891 9.12109 5.72656 8 5.72656C6.85156 5.72656 5.94922 6.62891 5.94922 7.75C5.94922 8.89844 6.87891 9.80078 8 9.80078ZM11.9922 4.49609C11.9922 4.08594 11.6641 3.75781 11.2539 3.75781C10.8438 3.75781 10.5156 4.08594 10.5156 4.49609C10.5156 4.90625 10.8438 5.23438 11.2539 5.23438C11.6641 5.23438 11.9922 4.90625 11.9922 4.49609ZM14.0703 5.23438C14.125 6.24609 14.125 9.28125 14.0703 10.293C14.0156 11.2773 13.7969 12.125 13.0859 12.8633C12.375 13.5742 11.5 13.793 10.5156 13.8477C9.50391 13.9023 6.46875 13.9023 5.45703 13.8477C4.47266 13.793 3.625 13.5742 2.88672 12.8633C2.17578 12.125 1.95703 11.2773 1.90234 10.293C1.84766 9.28125 1.84766 6.24609 1.90234 5.23438C1.95703 4.25 2.17578 3.375 2.88672 2.66406C3.625 1.95312 4.47266 1.73438 5.45703 1.67969C6.46875 1.625 9.50391 1.625 10.5156 1.67969C11.5 1.73438 12.375 1.95312 13.0859 2.66406C13.7969 3.375 14.0156 4.25 14.0703 5.23438ZM12.7578 11.3594C13.0859 10.5664 13.0039 8.65234 13.0039 7.75C13.0039 6.875 13.0859 4.96094 12.7578 4.14062C12.5391 3.62109 12.1289 3.18359 11.6094 2.99219C10.7891 2.66406 8.875 2.74609 8 2.74609C7.09766 2.74609 5.18359 2.66406 4.39062 2.99219C3.84375 3.21094 3.43359 3.62109 3.21484 4.14062C2.88672 4.96094 2.96875 6.875 2.96875 7.75C2.96875 8.65234 2.88672 10.5664 3.21484 11.3594C3.43359 11.9062 3.84375 12.3164 4.39062 12.5352C5.18359 12.8633 7.09766 12.7812 8 12.7812C8.875 12.7812 10.7891 12.8633 11.6094 12.5352C12.1289 12.3164 12.5664 11.9062 12.7578 11.3594Z"
+                                        fill="white" />
+                                </svg>
+                                <div class="instrgam_button">
+                                    Instrgam
+                                </div>
+                            </div>
+                            <div class="left_footer_twitter_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                    fill="none">
+                                    <path
+                                        d="M14.3438 3.75C14.3438 3.90625 14.3438 4.03125 14.3438 4.1875C14.3438 8.53125 11.0625 13.5 5.03125 13.5C3.15625 13.5 1.4375 12.9688 0 12.0312C0.25 12.0625 0.5 12.0938 0.78125 12.0938C2.3125 12.0938 3.71875 11.5625 4.84375 10.6875C3.40625 10.6562 2.1875 9.71875 1.78125 8.40625C2 8.4375 2.1875 8.46875 2.40625 8.46875C2.6875 8.46875 3 8.40625 3.25 8.34375C1.75 8.03125 0.625 6.71875 0.625 5.125V5.09375C1.0625 5.34375 1.59375 5.46875 2.125 5.5C1.21875 4.90625 0.65625 3.90625 0.65625 2.78125C0.65625 2.15625 0.8125 1.59375 1.09375 1.125C2.71875 3.09375 5.15625 4.40625 7.875 4.5625C7.8125 4.3125 7.78125 4.0625 7.78125 3.8125C7.78125 2 9.25 0.53125 11.0625 0.53125C12 0.53125 12.8438 0.90625 13.4688 1.5625C14.1875 1.40625 14.9062 1.125 15.5312 0.75C15.2812 1.53125 14.7812 2.15625 14.0938 2.5625C14.75 2.5 15.4062 2.3125 15.9688 2.0625C15.5312 2.71875 14.9688 3.28125 14.3438 3.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left_footer_text">
+                <p>Privacy Policy | Terms & Conditions</p>
+                <p>All Copyright (c) 2022 Reserved</p>
+            </div>
+        </div>
+        <div class="new_comments">
+            <div class="left_footer_mega_news_title">
+                <div class="footer_svg">
+                </div>
+                <p>New Comments</p>
+            </div>
+            <div class="new_comments_card">
+                <p class="new_comments_card_title">
+                    Cassia
+                </p>
+                <p class="new_comments_card_content">
+                    Take a rest, i'll be cheer up you again in 2 next game go go go
+                </p>
+            </div>
+            <div class="new_comments_card">
+                <p class="new_comments_card_title">
+                    Cassia
+                </p>
+                <p class="new_comments_card_content">
+                    Take a rest, i'll be cheer up you again in 2 next game go go go
+                </p>
+            </div>
+            <div class="new_comments_card">
+                <p class="new_comments_card_title">
+                    Cassia
+                </p>
+                <p class="new_comments_card_content">
+                    Take a rest, i'll be cheer up you again in 2 next game go go go
+                </p>
+            </div>
+            <div class="new_comments_card">
+                <p class="new_comments_card_title">
+                    Cassia
+                </p>
+                <p class="new_comments_card_content">
+                    Take a rest, i'll be cheer up you again in 2 next game go go go
+                </p>
+            </div>
+        </div>
+        <div class="follow_on_instagram">
+            <div class="left_footer_mega_news_title">
+                <div class="footer_svg">
+                </div>
+                <p>Follow On Instrgam</p>
+            </div>
+            <div class="follow_on_instagram_image">
+                <img src="./assets/img/car/unsplash_-js8KGQLfhw.jpg" />
+                <img src="./assets/img/animal/07.jpg" alt="img" />
+                <img src="./assets/img/technology/02.jpg" alt="img" />
+                <img src="./assets/img/food/07.jpg" alt="img" />
+                <img src="./assets/img/music/01.jpg" alt="img" />
+                <img src="./assets/img/dance/01.jpg" alt="img" />
+                <img src="./assets/img/animal/10.jpg" alt="img" />
+                <img src="./assets/img/sport/02.jpg" alt="img" />
+                <img src="./assets/img/dance/03.jpg" alt="img" />
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
